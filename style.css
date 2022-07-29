@@ -1,0 +1,30 @@
+.movies{
+     text-align: center;
+    width: auto;
+    height: auto;
+    /* margin: 0 auto; */
+    background-color: gray;
+    border: 2px solid white;
+    color: bisque;
+}
+/* .movies ul{
+    position: relative;
+    
+} */
+
+ ul li{
+    color: rgb(52, 22, 224);
+    right: 0;
+    left: 0;
+    display: block;
+    position: relative;
+    padding: 1rem;
+    width: auto;
+    border: 2px solid white;
+    border-left: 0 ;
+    border-right: 0 ;
+    margin-left: -3rem;
+    list-style: none;
+    font-weight: bolder;
+    font-size: 2rem;
+}
