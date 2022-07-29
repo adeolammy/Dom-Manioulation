@@ -70,9 +70,10 @@ link.style.background = 'grey'
 // /    get to total numbers of word and insert above the text
 
 let ans = cont.innerText.split(' ').length;
-let div = document.createElement('div')
-div.innerText = `${ans} words`;
-document.body.insertBefore(div, cont)
+let h3 = document.createElement('h3')
+h3.innerText = `${ans} words count`;
+document.body.insertBefore(h3, cont).style.background = 'yellow'
+document.body.insertBefore(h3, cont).style.display = 'inline'
 
 
 
@@ -96,5 +97,5 @@ li.classList.add('list')
 const diva = document.querySelector('div');
 const h2 = document.createElement('h2');
 diva.append(h2)
-h2.innerText = 'latest movies'
+// h2.innerText = 'latest movies'
 h2.classList.add('movies')
