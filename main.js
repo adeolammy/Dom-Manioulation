@@ -5,14 +5,14 @@
 
 // SOLUTION DAT WORKS WELL   // SOLUTION DAT WORKS WELL  // SOLUTION DAT WORKS WELL
 
-// let cont =  document.querySelector('p');
-//   cont.innerHTML = cont.innerText
-// .split(' ').map(ele => ele.length > 8  
-//     ?
-//       `<span style="background-color: red" > ${ele}</span>`    
-//     :
-//         ele
-// ).join(' ');
+let cont =  document.querySelector('p');
+  cont.innerHTML = cont.innerText
+.split(' ').map(ele => ele.length > 8  
+    ?
+      `<span style="background-color: red" > ${ele}</span>`    
+    :
+        ele
+).join(' ');
 
 
 
@@ -52,28 +52,37 @@
 // add a link to the source after the paragrph tag
 // the source (www.fireman.com)
 
-// let link = document.createElement('a');
-// link.href = 'https//:fireman.com/'
-// link.innerText = "Here's  the link"
-// document.body.appendChild(link)
-// link.style.alignContent = 'center'
-// link.style.color = 'black'
-// link.style.textDecorationLine= 'none'
-// link.style.border = '2px solid black'
-// link.style.borderRadius = '8px'
-// link.style.padding = '4px'
-// link.style.background = 'grey'
+let link = document.createElement('a');
+link.href = 'https//:fireman.com/'
+link.innerText = "Here's  the link"
+document.body.appendChild(link)
+link.style.alignContent = 'center'
+link.style.color = 'black'
+link.style.textDecorationLine= 'none'
+link.style.border = '2px solid black'
+link.style.borderRadius = '8px'
+link.style.padding = '4px'
+link.style.background = 'grey'
 
 
 // QUESTION 3   // QUESTION 3 // QUESTION 3   // QUESTION 3// QUESTION 3   // QUESTION 3
 // QUESTION 3   // QUESTION 3 // QUESTION 3   // QUESTION 3// QUESTION 3   // QUESTION 3
 // /    get to total numbers of word and insert above the text
 
-// let ans = cont.innerText.split(' ').length;
-// let div = document.createElement('div')
-// div.innerText = `${ans} words`;
-// document.body.insertBefore(div, cont)
+let ans = cont.innerText.split(' ').length;
+let div = document.createElement('div')
+div.innerText = `${ans} words`;
+document.body.insertBefore(div, cont)
 
+
+
+
+
+
+
+
+// FAVOURITE MOVIES SECTION
+// FAVOURITE MOVIES SECTION
 
 
 // const movie = document.querySelector('movies');
