@@ -99,3 +99,91 @@ const h2 = document.createElement('h2');
 diva.append(h2)
 // h2.innerText = 'latest movies'
 h2.classList.add('movies')
+
+
+
+const head = document.querySelector('.head');
+const p1 = document.querySelector('.p1');
+const p2 = document.querySelector('.p2');
+const btnNew = document.querySelector('.btnNew');
+const clear = document.querySelector('.clear');
+
+btnNew.addEventListener('click', (e)=>{
+  head.classList.add('border');
+  p1.style.color = 'darkBlue';
+  p1.style.fontSize = '1.3rem';
+  p2.classList.add('adjust');
+  p1.innerHTML = p1.innerText
+  .split(' ').map(ele => ele.length > 8  
+    ?
+      `<span style="background-color: red" > ${ele}</span>`    
+    :
+        ele
+).join(' ');
+ 
+ e.preventDefault();
+
+});
+
+
+clear.addEventListener('click', (e)=>{
+  head.classList.remove('border');
+  p1.style.color = 'black';
+  p1.style.fontSize = '16px';
+  p2.classList.remove('adjust');
+
+  
+  e.preventDefault();
+
+})
+
+//TO CLONE FROM 1 ARRAY TO ANOTHER 
+// function clone(x ,y) {
+//     x = [1,2,3,4,5,6,7];
+//     y = [];
+//    //1  return y = [... x];
+//   //2  return y = [... new Set(x)];
+//   //3 return y = Array.from(x);
+//   //4 return y = x.slice()
+//   //5 return y = x;
+//   //6 return y = x.map((i)=>i);
+//   //7  return y = x.filter((i)=>i);
+    
+// };
+
+// console.log(clone());
+
+// TO GET THE 1ST ELEMENT OF AN ARRAY IN A FUNCTION
+
+// const first = function(n) {
+// // 1 return n.shift()
+// // 2 return n.slice(0,1)
+// // 3 return n.splice(0,1)
+//  return n.splice(0,1)
+
+ 
+// }
+// console.log(first([7,9,0,-2]));
+// console.log(first([],3));
+// console.log(first([7,9,0,-2],[3]));
+// console.log(first([7,9,0,-2],[6]));
+// console.log(first([7,9,0,-2],[-3]));
+
+// WRITE A SIMPLE JS PROG TO JOIN THE FOLLOWING ARRAY
+
+// const myColor =['red', 'Green','white','Black'];
+// let x = myColor.join(',')
+// let r = myColor.join('+')
+// console.log(x,r);
+
+
+const result = document.querySelector('#result');
+const input = document.querySelector('#input');
+const btn = document.querySelector('#btn');
+
+ input.addEventListener('input', ()=>{
+   return result.value = eval(input.value)
+
+ 
+ });
+ 

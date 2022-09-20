@@ -36,3 +36,33 @@ h1, p{
     font-weight: bolder;
     font-size: 2rem;
 }
+
+.border{
+    border: 2px red dashed;
+    border-radius: 50%;
+    padding: 3.1rem;
+    width: 66px;
+    background-color: rgb(255, 210, 127);
+}
+
+.adjust{
+    transform: translateX(28%);
+    transition: all 0.2s ease-in-out;
+    color: brown;
+    font-size: 1.3rem;
+}
+
+.caculate{
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    height: auto;
+    background-color: darkgrey;
+    
+}
+.caculate input{
+    width: 250px;
+    height: 30px;
+
+
+}
